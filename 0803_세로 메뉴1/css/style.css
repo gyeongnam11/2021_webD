@@ -1,0 +1,263 @@
+/*nor*/
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+/*lib*/
+.row:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+/*cus*/
+.main_page {
+    width: 1000px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #afafaf;
+}
+
+/*left side*/
+.side {
+    float: left;
+    width: 250px;
+    height: 650px;
+
+}
+
+.side > .logo {
+    width: 250px;
+    height: 40px;
+    background-color: #999;
+}
+
+/*menu*/
+.side > .menu {
+    width: 250px;
+    height: 610px;
+    background-color: white;
+}
+
+.side > .menu li {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.side > .menu li > a {
+    padding: 10px;
+    display: block;
+}
+
+.side > .menu li:hover > a {
+    background-color: white;
+    color: black;
+}
+
+.side > .menu li ul.submenu {
+    display: none;
+}
+
+.side > .menu li ul.submenu a {
+    background-color: gainsboro;
+    color: black;
+}
+
+
+.side > .menu li ul.submenu a:hover {
+    background-color: gold;
+    color: black;
+}
+
+.right_side {
+    float: left;
+    width: 750px;
+    height: 650px;
+    background-color: #777;
+}
+
+
+.slide {
+    height: 350px;
+    background-color: #666;
+}
+
+/*contents*/
+.contents > div {
+    float: left;
+    width: 33.3333%;
+    height: 200px;
+}
+
+.contents > .notice {
+    background-color: #999;
+
+}
+
+/*tab*/
+.contents .tab_menu {
+    padding: 10px;
+    float: left;
+}
+
+.contents .tab_menu h3 {
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #48487d;
+    /*    border-radius: 5px 5px 0 0;*/
+    margin-top: 3px;
+    width: 70px;
+    border-radius: 5px;
+}
+
+.contents .notice li {
+    float: left;
+    width: 250px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    position: relative;
+    top: 3px;
+    margin-left: 8px;
+
+}
+.notice li:hover{
+    font-weight: bold;
+}
+
+.contents .notice li a {
+    display: block;
+    width: 220px;
+    text-align: left;
+    padding: 6px;
+    position: relative;
+    bottom: 30px;
+    float: left;
+    background-color: white;
+    border: 2px solid #48487d;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.contents .notice li span {
+    float: right;
+}
+
+.contents > .gallery {
+
+    background-color: #555;
+}
+
+.contents .gallery li {
+    float: left;
+    position: relative;
+    width: 230px;
+    height: 140px;
+    bottom: 28px;
+    margin-left: 8px;
+    border: 2px solid #48487d;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.contents > .shotrcut {
+
+    background-color: #444;
+}
+
+/*layer*/
+.layer {
+    display: none;
+    width: 400px;
+    height: 290px;
+    background-color: #fff;
+    border: 5px solid #48487d;
+    position: fixed;
+    left: 35%;
+    top: 30%;
+    /*    margin-left: -250px;*/
+    /*    margin-top: -250px;*/
+    z-index: 100;
+}
+
+.layer h2 {
+    margin-top: 15px;
+    text-align: center;
+/*    padding: 10px;*/
+
+}
+
+.layer button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    border: 3px solid #48487d;
+    border-radius: 5px;
+/*    padding: 5px;*/
+    width: 50px; 
+    height: 25px;
+    
+
+
+
+}
+
+.layer-bg {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.layer_body{
+    padding: 20px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 25px;
+}
+.foot_logo{
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+.foot_menu{
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.foot_menu li{
+    display: inline-block;
+    width: 100px;
+    margin-top: 24px;
+}
+.foot_menu li a{
+    letter-spacing: 3px;
+}
+.copyright{
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+}
